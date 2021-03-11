@@ -1,0 +1,212 @@
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+================= RESTART: D:\LaTech\FDS\classification (1).py =================
+<class 'numpy.ndarray'>
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.79%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.98%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.30%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.66%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.66%
+
+K-Neighbours Classification
+Train Accuracy: 96.00%
+Test Accuracy: 91.75%
+
+K-Neighbours Classification
+Train Accuracy: 96.14%
+Test Accuracy: 91.33%
+
+K-Neighbours Classification
+Train Accuracy: 96.34%
+Test Accuracy: 90.36%
+
+K-Neighbours Classification
+Train Accuracy: 96.17%
+Test Accuracy: 90.16%
+
+K-Neighbours Classification
+Train Accuracy: 96.12%
+Test Accuracy: 90.74%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 88.87%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 89.48%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 88.87%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 88.54%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 89.90%
+
+Accuracy of  Random Forest Classification [94.79, 94.98, 94.3, 94.66, 94.66]
+Accuracy of  K-Neighbours Classification [91.75, 91.33, 90.36, 90.16, 90.74]
+Accuracy of  Decision Tree Classification [88.87, 89.48, 88.87, 88.54, 89.9]
+
+Mean Accuracy rate of  Random Forest Classification : 94.68%
+Mean Accuracy rate of  K-Neighbours Classification : 90.87%
+Mean Accuracy rate of  Decision Tree Classification : 89.13%
+None
+               Features  Gini-Importance
+0              R1-PM2:V         0.020871
+1              R4-PM2:V         0.020115
+2              R1-PM5:I         0.018073
+3              R2-PM5:I         0.017722
+4              R4-PM5:I         0.016990
+..                  ...              ...
+123  control_panel_log2         0.000000
+124  control_panel_log1         0.000000
+125             R4-PA:Z         0.000000
+126             R1-PA:Z         0.000000
+127          snort_log4         0.000000
+
+[128 rows x 2 columns]
+[['R1-PM2:V']
+ ['R4-PM2:V']
+ ['R1-PM5:I']
+ ['R2-PM5:I']
+ ['R4-PM5:I']
+ ['R3-PM5:I']
+ ['R3-PM2:V']
+ ['R4-PM7:V']
+ ['R2-PM1:V']
+ ['R4-PA2:VH']
+ ['R2-PM3:V']
+ ['R2-PM7:V']
+ ['R1-PA2:VH']
+ ['R4-PA3:VH']
+ ['R3-PA3:VH']
+ ['R1-PA3:VH']
+ ['R2-PA3:VH']
+ ['R3-PA5:IH']
+ ['R4-PA5:IH']
+ ['R1-PA5:IH']]
+[3, 90, 9, 38, 96, 67, 61, 100, 30, 89, 34, 42, 2, 91, 62, 4, 33, 66, 95, 8]
+       R1-PA2:VH     R1-PM2:V   R1-PA3:VH  ...  R4-PA5:IH   R4-PM5:I     R4-PM7:V
+0     -49.572308  127648.0176 -169.578319  ... -56.871791  621.84156  127522.6512
+1     -46.300719  130255.6377 -166.278082  ... -50.792709  496.04499  130130.2713
+2     -46.254883  130280.7109 -166.232245  ... -50.781249  496.41121  130155.3446
+3     -45.899649  130556.5169 -165.882741  ... -50.311424  494.76322  130431.1505
+4     -45.424094  131057.9823 -165.424375  ... -49.881706  493.11523  130932.6159
+...          ...          ...         ...  ...        ...        ...          ...
+15445  12.725393  131283.6417 -107.274888  ...  12.003466  340.76771  132286.5725
+15446  11.992007  131835.2537 -107.979626  ...  12.032114  336.73929  131760.0339
+15447  11.802931  131860.3269 -108.191621  ...  11.613855  337.10551  131785.1071
+15448  11.762824  131860.3269 -108.214539  ...  11.568018  337.10551  131760.0339
+15449  11.739905  131860.3269 -108.237457  ...  11.493533  337.65484  131760.0339
+
+[15450 rows x 20 columns]
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.98%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 95.05%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.21%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.76%
+
+Random Forest Classification
+Train Accuracy: 100.00%
+Test Accuracy: 94.98%
+
+K-Neighbours Classification
+Train Accuracy: 97.25%
+Test Accuracy: 94.05%
+
+K-Neighbours Classification
+Train Accuracy: 97.36%
+Test Accuracy: 94.24%
+
+K-Neighbours Classification
+Train Accuracy: 97.43%
+Test Accuracy: 93.92%
+
+K-Neighbours Classification
+Train Accuracy: 97.35%
+Test Accuracy: 93.88%
+
+K-Neighbours Classification
+Train Accuracy: 97.39%
+Test Accuracy: 94.08%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 91.42%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 90.94%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 90.52%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 90.74%
+
+Decision Tree Classification
+Train Accuracy: 100.00%
+Test Accuracy: 90.74%
+
+Accuracy of  Random Forest Classification [94.98, 95.05, 94.21, 94.76, 94.98]
+Accuracy of  K-Neighbours Classification [94.05, 94.24, 93.92, 93.88, 94.08]
+Accuracy of  Decision Tree Classification [91.42, 90.94, 90.52, 90.74, 90.74]
+
+Mean Accuracy rate of  Random Forest Classification : 94.80%
+Mean Accuracy rate of  K-Neighbours Classification : 94.03%
+Mean Accuracy rate of  Decision Tree Classification : 90.87%
+None
+     Features  Gini-Importance
+0    R2-PM5:I         0.060667
+1    R1-PM5:I         0.057157
+2    R4-PM5:I         0.056188
+3    R3-PM5:I         0.054362
+4   R1-PA2:VH         0.053243
+5   R3-PA5:IH         0.053016
+6   R1-PA5:IH         0.051714
+7    R4-PM2:V         0.051616
+8   R4-PA2:VH         0.050816
+9    R1-PM2:V         0.050771
+10  R4-PA5:IH         0.050136
+11  R3-PA3:VH         0.049860
+12  R4-PA3:VH         0.049547
+13  R1-PA3:VH         0.048821
+14  R2-PA3:VH         0.048816
+15   R3-PM2:V         0.047151
+16   R4-PM7:V         0.043356
+17   R2-PM3:V         0.041155
+18   R2-PM1:V         0.040965
+19   R2-PM7:V         0.040643
+>>> 
