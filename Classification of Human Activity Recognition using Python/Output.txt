@@ -1,0 +1,110 @@
+Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+===================== RESTART: D:\LaTech\DM\Project\alc.py =====================
+
+Active Learning --- Initial took 1000 rows randomly then at every iteration getting most important rows ar every iteration and calculating accuracy rate. This continues 
+until accuracy reaches 91%. This reduces training the model with all rows 
+
+Accuracy after query 0: 66.9908%
+Accuracy after query 1: 71.28%
+Accuracy after query 2: 75.54%
+Accuracy after query 3: 77.42%
+Accuracy after query 4: 79.08%
+Accuracy after query 5: 81.77%
+Accuracy after query 6: 83.18%
+Accuracy after query 7: 84.67%
+Accuracy after query 8: 85.61%
+Accuracy after query 9: 86.96%
+Accuracy after query 10: 88.05%
+Accuracy after query 11: 88.91%
+Accuracy after query 12: 90.01%
+Accuracy after query 13: 90.65%
+Accuracy after query 14: 91.38%
+Train Accuracy: 100.00%
+Test Accuracy: 81.00%
+
+Train Accuracy: 100.00%
+Test Accuracy: 80.73%
+
+Train Accuracy: 100.00%
+Test Accuracy: 82.87%
+
+Train Accuracy: 100.00%
+Test Accuracy: 81.53%
+
+Train Accuracy: 100.00%
+Test Accuracy: 81.63%
+
+
+<<<<< Before Feature Selection >>>>>>>
+
+{'Test Accuracy': 81.55199999999999}
+{'Test Accuracy': [81.0, 80.73, 82.87, 81.53, 81.63]}
+None
+                 Features  Gini-Importance
+0       Ine_RLA_magneticX         0.012165
+1       Ine_BAC_magneticZ         0.011590
+2       Ine_LLA_magneticX         0.011433
+3         LOC_TAG_X_1_1_1         0.011154
+4       Ine_BAC_magneticX         0.009506
+..                    ...              ...
+238     REE_SWI_DISHWASHE         0.000000
+239           Acc_RH_accZ         0.000000
+240           Acc_RH_accY         0.000000
+241           Acc_RH_accX         0.000000
+242  REE_SWI_LOWERDRAWE_1         0.000000
+
+[243 rows x 2 columns]
+                 Features  Gini-Importance
+0       Ine_RLA_magneticX         0.012165
+1       Ine_BAC_magneticZ         0.011590
+2       Ine_LLA_magneticX         0.011433
+3         LOC_TAG_X_1_1_1         0.011154
+4       Ine_BAC_magneticX         0.009506
+..                    ...              ...
+238     REE_SWI_DISHWASHE         0.000000
+239           Acc_RH_accZ         0.000000
+240           Acc_RH_accY         0.000000
+241           Acc_RH_accX         0.000000
+242  REE_SWI_LOWERDRAWE_1         0.000000
+
+[243 rows x 2 columns]
+171
+
+Colimns having ood Gain Importance
+[69, 45, 95, 240, 43, 83, 0, 39, 231, 241, 82, 56, 232, 32, 237, 235, 96, 239, 48, 57, 89, 63, 70, 91, 2, 233, 71, 234, 49, 117, 236, 242, 73, 98, 238, 46, 97, 37, 47, 84, 3, 51, 62, 170, 133, 44, 18, 87, 101, 86, 61, 60, 72, 29, 118, 75, 33, 17, 31, 85, 58, 119, 88, 100, 90, 99, 154, 28, 139, 102, 59, 78, 74, 171, 141, 77, 156, 12, 65, 64, 159, 9, 11, 120, 38, 4, 10, 52, 16, 27, 14, 161, 160, 134, 6, 40, 76, 41, 19, 23, 155, 185, 136, 24, 50, 55, 179, 104, 15, 42, 146, 21, 68, 7, 67, 169, 79, 30, 26, 189, 53, 122, 184, 5, 125, 181, 81, 94, 93, 13, 140, 22, 103, 121, 150, 1, 25, 106, 111, 191, 54, 8, 20, 80, 165, 186, 217, 190, 108, 92, 115, 149, 66, 211, 129, 105, 130, 127, 135, 180, 109, 229, 128, 123, 176, 114, 145, 126, 112, 110, 174]
+        MILLISEC  Acc_RKN_accX  ...  LOC_TAG_Y_1_1_1  LOC_TAG_Z_1_1_1
+0       775492.0        -133.0  ...           2324.0           1631.0
+1       275997.0        -157.0  ...           1636.0           1605.0
+2      1018023.0       -1305.0  ...            900.0            494.0
+3       509662.0         768.0  ...           1786.0           1425.0
+4       635760.0         408.0  ...           2414.0           1544.0
+...          ...           ...  ...              ...              ...
+14995   819025.0        -272.0  ...           2324.0           1631.0
+14996   950557.0         -26.0  ...            783.0           1256.0
+14997   909624.0         118.0  ...           2324.0           1631.0
+14998   855991.0         -83.0  ...           2324.0           1631.0
+14999   874958.0        -891.0  ...           2324.0           1631.0
+
+[15000 rows x 171 columns]
+Train Accuracy: 100.00%
+Test Accuracy: 82.57%
+
+Train Accuracy: 100.00%
+Test Accuracy: 82.37%
+
+Train Accuracy: 100.00%
+Test Accuracy: 83.83%
+
+Train Accuracy: 100.00%
+Test Accuracy: 82.23%
+
+Train Accuracy: 100.00%
+Test Accuracy: 83.23%
+
+<<<<< After Feature Selection >>>>>>>
+
+{'Test Accuracy': 82.846}
+{'Test Accuracy': [82.57, 82.37, 83.83, 82.23, 83.23]}
+>>> 
